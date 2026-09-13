@@ -1,0 +1,384 @@
+css
+/* ==========================================
+   🎮 ESTILOS PRINCIPALES
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080808;
+    color: white;
+}
+
+
+/* ==========================================
+   🌌 MENÚ PRINCIPAL
+   ========================================== */
+
+#menu {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 35%,
+            #263238 0%,
+            #111820 35%,
+            #050505 100%
+        );
+
+    padding: 30px;
+}
+
+
+/* ==========================================
+   🚀 TÍTULO
+   ========================================== */
+
+#menu h1 {
+    font-size: 55px;
+    margin: 0 0 10px 0;
+
+    text-shadow:
+        0 0 10px rgba(255, 255, 255, 0.4),
+        0 0 25px rgba(80, 180, 255, 0.3);
+}
+
+#subtitulo {
+    color: #bdbdbd;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* ==========================================
+   🔘 BOTONES
+   ========================================== */
+
+button {
+    border: none;
+
+    border-radius: 12px;
+
+    padding: 15px 25px;
+
+    margin: 8px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s,
+        filter 0.2s,
+        box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+
+/* ==========================================
+   🔵 BOTÓN GOOGLE
+   ========================================== */
+
+#googleBtn {
+    background: white;
+    color: #222;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+#googleBtn:hover {
+    background: #eeeeee;
+}
+
+
+/* ==========================================
+   ▶️ BOTÓN JUGAR
+   ========================================== */
+
+#jugarBtn {
+    background: #43a047;
+    color: white;
+
+    box-shadow:
+        0 5px 20px rgba(67, 160, 71, 0.3);
+}
+
+#jugarBtn:hover {
+    background: #4caf50;
+}
+
+
+/* ==========================================
+   🚪 BOTÓN SALIR
+   ========================================== */
+
+#salirBtn {
+    background: #e53935;
+    color: white;
+
+    box-shadow:
+        0 5px 20px rgba(229, 57, 53, 0.3);
+}
+
+#salirBtn:hover {
+    background: #f44336;
+}
+
+
+/* ==========================================
+   ↩️ BOTÓN VOLVER
+   ========================================== */
+
+#volverBtn {
+    background: #546e7a;
+    color: white;
+}
+
+#volverBtn:hover {
+    background: #607d8b;
+}
+
+
+/* ==========================================
+   👤 PERFIL DEL USUARIO
+   ========================================== */
+
+#usuario {
+    display: none;
+
+    width: 340px;
+
+    margin-top: 20px;
+
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.5);
+
+    backdrop-filter: blur(10px);
+}
+
+
+/* ==========================================
+   🖼️ FOTO DEL USUARIO
+   ========================================== */
+
+#fotoUsuario {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 0 auto 15px auto;
+
+    border: 3px solid rgba(255, 255, 255, 0.8);
+
+    box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+
+/* ==========================================
+   👤 NOMBRE
+   ========================================== */
+
+#nombreUsuario {
+    margin: 5px 0;
+
+    font-size: 26px;
+}
+
+
+/* ==========================================
+   📧 CORREO
+   ========================================== */
+
+#correoUsuario {
+    color: #aaaaaa;
+
+    font-size: 14px;
+
+    word-break: break-word;
+
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   📢 ESTADO
+   ========================================== */
+
+#estado {
+    min-height: 25px;
+
+    margin-top: 20px;
+
+    color: #cccccc;
+
+    font-size: 15px;
+}
+
+
+/* ==========================================
+   🎮 ÁREA DEL JUEGO
+   ========================================== */
+
+#juego {
+    display: none;
+
+    min-height: 100vh;
+
+    width: 100%;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.85)
+        ),
+        radial-gradient(
+            circle at center,
+            #263238,
+            #050505
+        );
+}
+
+
+/* ==========================================
+   🚀 TÍTULO DEL JUEGO
+   ========================================== */
+
+#juego h2 {
+    font-size: 38px;
+
+    margin-top: 50px;
+
+    text-shadow:
+        0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+
+/* ==========================================
+   💬 MENSAJE DEL JUEGO
+   ========================================== */
+
+#mensajeJuego {
+    color: #bbbbbb;
+
+    font-size: 18px;
+
+    margin: 20px auto;
+
+    max-width: 600px;
+}
+
+
+/* ==========================================
+   📱 CELULARES
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    #menu {
+        padding: 20px;
+    }
+
+    #menu h1 {
+        font-size: 38px;
+    }
+
+    #subtitulo {
+        font-size: 16px;
+    }
+
+    #usuario {
+        width: 90%;
+        max-width: 340px;
+    }
+
+    button {
+        width: 90%;
+        max-width: 300px;
+
+        font-size: 16px;
+
+        padding: 14px 20px;
+    }
+
+    #juego {
+        padding: 20px;
+    }
+
+    #juego h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* ==========================================
+   ✨ ANIMACIÓN DEL MENÚ
+   ========================================== */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+#menu h1,
+#menu #subtitulo,
+#menu button,
+#menu #usuario,
+#menu #estado {
+    animation: aparecer 0.6s ease;
+}
+
